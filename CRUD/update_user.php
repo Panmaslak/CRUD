@@ -16,9 +16,10 @@ if ($conn->connect_error) {
 $name = $_POST['name'];
 $surname = $_POST['surname'];
 $email = $_POST['email'];
+$id = $_GET['id'];
 
 // Poprawne zapytanie SQL
-$sql = "UPDATE users SET name = '$name', surname = '$surname' WHERE email = '$email'";
+$sql = "UPDATE users SET name = '$name', surname = '$surname', email = '$email' WHERE id = '$id'";
 
 if ($conn->query($sql) === TRUE) {
     ?>
