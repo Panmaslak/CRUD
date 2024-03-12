@@ -54,7 +54,7 @@
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
                     echo "<tr><td>" . $row["name"] . "</td><td>" . $row["surname"] . "</td><td>" . $row["email"] . "</td></tr>";
-                    echo "<td><a href='/crud/edit_user.php?id=" . $row["id"] . "' class='btn btn-primary'>Edytuj</a> <a href='/crud/delete_user.php?id=" . $row["id"] . "'                          class='btn btn-danger'>Usuń</a></td></tr>"; 
+                    echo "<td><a href='/crud/edit_user.php?id=" . $row["id"] . "' class='btn btn-primary'>Edytuj</a> <a href='/crud/delete_user.php?id=" . $row["id"] . "'class='btn btn-danger'>Usuń</a></td></tr>"; 
                 }
             } else {
                 echo "<tr><td colspan='3'>Brak danych w bazie</td></tr>";
